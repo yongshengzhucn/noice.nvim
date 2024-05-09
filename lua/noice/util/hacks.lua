@@ -25,7 +25,8 @@ function M.enable()
 
   -- Hacks for Neovim < 0.10
   if vim.fn.has("nvim-0.10") == 0 then
-    M.fix_incsearch()
+    ---@see https://github.com/neovim/neovim/pull/27947
+    -- M.fix_incsearch()
   end
 end
 
